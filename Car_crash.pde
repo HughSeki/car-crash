@@ -173,7 +173,7 @@ void draw() {
   }
 
   // Car
-  image(green, carX, 580, 100, 170);
+  //image(green, carX, 580, 100, 170);
 
   // CarE
 
