@@ -156,7 +156,7 @@ void draw() {
 
   // ball
   if (ball == false) {
-    //image(coin_image[frameCount%32/4], ballX, ballY, 70, 70);
+    image(coin_image[frameCount%32/4], ballX, ballY, 70, 70);
   }
 
   if (mode == "easy" || mode == "normal" || mode == "hard" || mode == "challenge" || mode == "crazy") {
@@ -174,7 +174,7 @@ void draw() {
   }
 
   // Car
-  //image(green, carX, 580, 100, 170);
+  image(green, carX, 580, 100, 170);
 
   // CarE
 
