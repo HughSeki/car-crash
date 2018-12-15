@@ -132,6 +132,7 @@ void draw() {
   rect(width/2 + 360, yt, 40, 150);
   rect(width/2 + 360, yf, 40, 150);
 
+/*
   if (state == "start" || state == "set name") {
     y += lineSpeed;
     ys += lineSpeed;
@@ -151,7 +152,7 @@ void draw() {
       yf = -150;
     }
   }
-
+*/
 
   // ball
   if (ball == false) {
