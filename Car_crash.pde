@@ -162,7 +162,6 @@ void draw() {
   
   // ball
   if (ball == false) {
-    println(int(frameCount%32/4));
     image(coin_image[int(frameCount%32/4)], ballX, ballY, 70, 70);
   }
 
