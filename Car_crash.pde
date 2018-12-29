@@ -971,7 +971,7 @@ void draw() {
 
 void keyReleased() {
   if (state == "set name") {
-    print(key+" ");
+    //print(key+" ");
     if (keyCode == 8 && nameindex > 0) {
       if (nameindex < name.length) {
         name[nameindex] = ' ';
