@@ -99,6 +99,13 @@ void setup() {
   coin_image[6] = loadImage( "coin6.gif" );
   coin_image[7] = loadImage( "coin7.gif" );
   coin_image[0].width = 200;
+  coin_image[1].width = 200;
+  coin_image[2].width = 200;
+  coin_image[3].width = 200;
+  coin_image[4].width = 200;
+  coin_image[5].width = 200;
+  coin_image[6].width = 200;
+  coin_image[7].width = 200;
 }
 
 void draw() {
