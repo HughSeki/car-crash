@@ -162,8 +162,8 @@ void draw() {
   
   // ball
   if (ball == false) {
-    //image(coin_image[frameCount%32/4], ballX, ballY, 70, 70);
-    image(coin_image[0], ballX, ballY, 70, 70);
+    println(frameCount%32/4);
+    image(coin_image[frameCount%32/4], ballX, ballY, 70, 70);
   }
 
   if (mode == "easy" || mode == "normal" || mode == "hard" || mode == "challenge" || mode == "crazy") {
