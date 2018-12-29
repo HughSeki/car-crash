@@ -162,8 +162,7 @@ void draw() {
   
   // ball
   if (ball == false) {
-    //image(coin_image[frameCount%32/4], ballX, ballY, 70, 70);
-    image(coin_image[0], ballX, ballY, 70, 70);
+    image(coin_image[frameCount%32/4], ballX, ballY, 70, 70);
   }
 
   if (mode == "easy" || mode == "normal" || mode == "hard" || mode == "challenge" || mode == "crazy") {
@@ -356,46 +355,22 @@ void draw() {
 
     if (namecolor == "rainbow") {
       fill(namecolorR, namecolorG, namecolorB);
-      textAlign(CENTER);
-      textSize(50);
-      text(nameString, width/2, 50);
-    }
-    if (namecolor == "red") {
+    } else if (namecolor == "red") {
       fill(255, 0, 0);
-      textAlign(CENTER);
-      textSize(50);
-      text(nameString, width/2, 50);
-    }
-    if (namecolor == "green") {
+    } else if (namecolor == "green") {
       fill(0, 255, 0);
-      textAlign(CENTER);
-      textSize(50);
-      text(nameString, width/2, 50);
-    }
-    if (namecolor == "blue") {
+    } else if (namecolor == "blue") {
       fill(0, 0, 255);
-      textAlign(CENTER);
-      textSize(50);
-      text(nameString, width/2, 50);
-    }
-    if (namecolor == "aqua") {
+    } else if (namecolor == "aqua") {
       fill(0, 255, 255);
-      textAlign(CENTER);
-      textSize(50);
-      text(nameString, width/2, 50);
-    }
-    if (namecolor == "white") {
+    } else if (namecolor == "white") {
       fill(255);
-      textAlign(CENTER);
-      textSize(50);
-      text(nameString, width/2, 50);
-    }
-    if (namecolor == "pink") {
+    } else if (namecolor == "pink") {
       fill(250, 20, 230);
-      textAlign(CENTER);
-      textSize(50);
-      text(nameString, width/2, 50);
     }
+    textAlign(CENTER);
+    textSize(50);
+    text(nameString, width/2, 50);
     textAlign(LEFT);
   }
 
@@ -834,7 +809,8 @@ void draw() {
         name[nameindex] = ' ';
       }
     }
-    nameString = new String(name);
+    nameString = join(name, "");
+    //nameString = new String(name);
     text(nameString, width/5 - 200, height/2);
 
     textSize(50);
