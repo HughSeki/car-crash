@@ -98,6 +98,7 @@ void setup() {
   coin_image[5] = loadImage( "coin5.gif" );
   coin_image[6] = loadImage( "coin6.gif" );
   coin_image[7] = loadImage( "coin7.gif" );
+  coin_image[0].width = 200;
 }
 
 void draw() {
@@ -154,7 +155,8 @@ void draw() {
   
   // ball
   if (ball == false) {
-    image(coin_image[frameCount%32/4], ballX, ballY, 70, 70);
+    //image(coin_image[frameCount%32/4], ballX, ballY, 70, 70);
+    image(coin_image[0], ballX, ballY, 70, 70);
   }
 
   if (mode == "easy" || mode == "normal" || mode == "hard" || mode == "challenge" || mode == "crazy") {
