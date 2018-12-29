@@ -318,7 +318,7 @@ void draw() {
 
   // Draw coin
   textSize(30);
-  text(String.format("%d", int(coin)), 10, height - 10);
+  //text(String.format("%d", int(coin)), 10, height - 10);
 
   // Draw name
 
